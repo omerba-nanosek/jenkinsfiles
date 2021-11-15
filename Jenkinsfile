@@ -18,7 +18,7 @@ spec:
             steps {
                 git credentialsId: 'e60acdb4-4877-405e-9b2e-d7b980365021', url: 'https://github.com/web3j/sample-project-maven'
                 container('maven') {
-                    sh 'mvn -version'
+                    sh 'mvn clean install'
                 }
             }
         }
